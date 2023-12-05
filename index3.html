@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@400;500;700;900 & display=swap');
+            body {
+                background-color: #e68484;
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            form {
+                margin: 0 auto;
+                width: 50%;
+                padding: 20px;
+                background-color: #e79a9a;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px #f5a2a2;
+            }
+            input[type=text], textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #f48282;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+                font-weight: bold;
+            }
+            button[type=submit] {
+                background-color: #10080e;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+            button[type=submit]:hover {
+                background-color: rgb(228, 160, 166);
+            }
+            .container {
+                border-radius: 5px;
+                background-color: #f49e9e;
+                padding: 10px;
+            }
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px) {
+                form {
+                    width: 100%;
+                }
+                .col-25, .col-75, input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contato</h1>
+        <form action="/action_page.php">
+            <div class="container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mensagem">mensagem</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit">enviar</button>
+                </div>
+            </div>
+        </form>
+       <center><b><p>Você também pode entrar em contato conosco em:</p></b></center>
+        <ul>
+           <center><b><li><a href="https://www.instagram.com/your_instagram_username/">Instagram:@jrstory_</a></li></b></center>
+           <center><b><li><a href="https://wa.me/your_whatsapp_number">WhatsApp:(89)994221317</a></li></b></center>
+            
+
+        </ul>
+    </body>
+    </html>
+</body>
